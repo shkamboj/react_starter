@@ -60,12 +60,13 @@ class App extends Component{
   render(){
 
     const style = {
-      backgroundColor : 'white',
+      backgroundColor : 'skyblue',
+      color : 'white',
       font : 'inherit',
-      border : '2px solid skyblue',
+      border : '1px solid white',
+      borderRadius : "10px",
       padding : "8px",
       cursor : "pointer"
-      
     }
     return(
     <div className ='App'> 
