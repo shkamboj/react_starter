@@ -8,3 +8,11 @@
     text-align: center;
     background: skyblue;
 }
+
+
+input[type=text] {
+    border-radius: 10px;
+    border: grey;
+    color : darkslategray;
+    padding: 7px;
+  }

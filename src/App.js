@@ -87,8 +87,4 @@ class App extends Component{
 export default App;
 
 
-
 ReactDOM.render(app, document.querySelector('#app'));
-
-
-
