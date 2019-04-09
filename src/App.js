@@ -59,19 +59,10 @@ class App extends Component{
 
   render(){
 
-    const style = {
-      backgroundColor : 'skyblue',
-      color : 'white',
-      font : 'inherit',
-      border : '1px solid white',
-      borderRadius : "10px",
-      padding : "8px",
-      cursor : "pointer"
-    }
     return(
     <div className ='App'> 
       <h1>This line is written using Class</h1>
-      <button style={style} onClick= {this.switchNameHandler.bind(this, "Abhijeet")}>Switch Name</button>
+      <button onClick= {this.switchNameHandler.bind(this, "Abhijeet")}>Switch Name</button>
       <People name = {this.state.peoples[0].name}>
        </People> 
       <People name = {this.state.peoples[1].name}

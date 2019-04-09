@@ -1,3 +1,15 @@
-.Pure_js {
-	text-align:  center;
-}
+
+  .Pure_js {
+	  align-self: center;
+	  text-align: center;
+	  margin: 10px;
+	  color : white;
+	  background : grey;
+	  border : 5px solid #eee;
+	  border-radius : 20px;
+	  box-shadow : 0 2px 2px #ccc;
+	  width : 600px;
+	  padding : 10px;
+  }
+
+  

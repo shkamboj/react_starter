@@ -1,12 +1,11 @@
 .People {
     width: 60%;
     margin: 16px auto;
-    border: 1px solid #eee;
+    border: 2px solid #eee;
     border-radius: 8px;
-    box-shadow: 0 2px 3px #ccc;
     padding : 16px;
     text-align: center;
-    background: skyblue;
+    background: rgb(58, 153, 190);
 }
 
 
