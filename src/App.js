@@ -58,13 +58,22 @@ class App extends Component{
 
   togglePeopleHandler = () => {
     const doesShow = this.state.showPeoples;
-    this.setState({
-      showPeoples : true
-    })
+    if(this.state.showPeoples)
+    {
+      this.setState({
+        showPeoples : false
+      })
+    }
+    
+    else
+    {
+      this.setState({
+        showPeoples : true
+      })
+    }
   }
 
   render(){
-
     return(
     <div className ='App'> 
       <h1>This line is written using Class</h1>
