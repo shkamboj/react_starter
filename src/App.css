@@ -70,6 +70,15 @@ button {
 
 
 
+button::-moz-focus-inner {              /*used for no outlining when clicking a button */
+  border: 0;
+}
+
+
+
+
+
+
 
 
 

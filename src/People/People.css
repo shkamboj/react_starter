@@ -16,3 +16,12 @@ input[type=text] {
     padding: 7px;
     width: 75%;
   }
+
+
+
+
+input::-moz-focus-inner {
+    border: 0;
+  }
+  
+  
