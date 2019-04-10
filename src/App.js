@@ -28,13 +28,14 @@ class App extends Component{
       {name : "Shubham Kamboj"},
       {name : "Anurag Chandel"},
       {name : "Udit Gulati"}
-    ]
+    ],
+    showPeoples : false
   }
   
   switchNameHandler = (name_to) => {
     // console.log("was clicked successfully");
     // DON'T DO THIS : this.state.peoples[0].name = "Abhijeet Rai";
-    this.setState({
+    this.setState({                        // setState is a function
       peoples : [
         {name : name_to},
         {name : "Anil Sharma"},
@@ -55,7 +56,12 @@ class App extends Component{
 
   }
 
-  
+  togglePeopleHandler = () => {
+    const doesShow = this.state.showPeoples;
+    this.setState({
+      showPeoples : true
+    })
+  }
 
   render(){
 
@@ -63,6 +69,10 @@ class App extends Component{
     <div className ='App'> 
       <h1>This line is written using Class</h1>
       <button onClick= {this.switchNameHandler.bind(this, "Abhijeet")}>Switch Name</button>
+      <button onClick= {this.togglePeopleHandler}>Dynamic</button>
+     {
+       this.state.showPeoples ?
+        <div>
       <People name = {this.state.peoples[0].name}>
        </People> 
       <People name = {this.state.peoples[1].name}
@@ -70,6 +80,8 @@ class App extends Component{
       </People> 
       <People name = {this.state.peoples[2].name}>
       </People>
+      </div> : null
+      }
     </div>
     );
   }
