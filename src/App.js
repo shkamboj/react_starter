@@ -78,4 +78,4 @@ class App extends Component{
 export default App;
 
 
-ReactDOM.render(app, document.querySelector('#app'));
+// ReactDOM.render(app, document.querySelector('#app')); upper cards were rendered by this line

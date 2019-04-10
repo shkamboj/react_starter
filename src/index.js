@@ -6,7 +6,7 @@ import Pure_js from './Pure_js'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<Pure_js />, document.getElementById('pure'));
+// ReactDOM.render(<Pure_js />, document.getElementById('pure'));  // how jsx works
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
