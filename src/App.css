@@ -23,7 +23,7 @@ body {
  	.App {
     align-self: center;
     text-align: center;
-    margin: 10px auto;
+    margin: 10px 20px 20px 30px;
     color : white;
     background : grey;
     border : 5px solid #eee;
