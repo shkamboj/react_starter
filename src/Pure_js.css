@@ -26,15 +26,15 @@
 
   @media only screen and (max-width: 600px) {
 	.Pure_js {
+		align-self: center;
 		text-align: center;
-		position: absolute;
-		margin: 10px 20px 20px 30px;
+		margin: 10px auto 30px;
 		color : white;
 		background : grey;
 		border : 5px solid #eee;
 		border-radius : 20px;
 		box-shadow : 0 2px 2px #ccc;
-		width : 70%;
+		width : 60%;
 		height:  250px;
 		padding : 10px;
 	}

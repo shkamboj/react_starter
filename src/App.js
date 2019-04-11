@@ -88,9 +88,9 @@ class App extends Component{
   }
     return(
     <div className ='App'> 
-      <h1>This line is written using Class</h1>
+      <h1>Hi there, I am Shubham Kamboj.</h1>
       <button onClick= {this.switchNameHandler.bind(this, "Abhijeet")}>Switch Name</button>
-      <button onClick= {this.togglePeopleHandler}>Dynamic</button>
+      <button onClick= {this.togglePeopleHandler}>Show Profile</button>
      {peeps}
     </div>
     );
