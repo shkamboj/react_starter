@@ -3,7 +3,6 @@ import './App.css';
 import ReactDOM from 'react-dom';
 import People from './People/People.js';
 
-
 function Person (props){
   return (
     <div className = "person"> 
@@ -48,7 +47,6 @@ class App extends Component{
     })
   }
 
-
   nameChangedHandler = (event) =>{
     this.setState({
       peoples : [
@@ -57,7 +55,6 @@ class App extends Component{
         {name : "Vikas"}
       ]
     })
-
   }
 
   togglePeopleHandler = () => {
@@ -76,8 +73,6 @@ class App extends Component{
       })
     }
   }
-
-  
 
   render(){
     let peeps = null;

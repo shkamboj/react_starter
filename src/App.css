@@ -1,5 +1,10 @@
 
 
+
+body {
+  background : skyblue;
+
+}
 .person {
   display : inline-block;
   margin : 10px;
@@ -11,8 +16,7 @@
   box-shadow : 0 2px 2px #ccc;
   width : 200px;
   padding : 10px;
-}  
-
+}
 
  @media only screen and (max-width: 600px) {
 
@@ -29,14 +33,13 @@
     padding : 10px;
 }
 
-  
+
 }
-
-
 
 @media only screen and (min-width: 601px) {
 
   .App {
+    float: right;
     align-self: center;
     text-align: center;
     margin: 10px;
@@ -50,11 +53,6 @@
   }
 }
 
-
-
-
-
-
 button {
   background : rgb(58, 153, 190);
       color : white;
@@ -67,10 +65,7 @@ button {
       width: 150px;
 }
 
-
-
-
-button::-moz-focus-inner {              /*used for no outlining when clicking a button */
+button::-moz-focus-inner{              /*used for no outlining when clicking a button */
   border: 0;
 }
 
