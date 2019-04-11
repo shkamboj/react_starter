@@ -27,7 +27,9 @@ class App extends Component{
     peoples : [
       {name : "Shubham Kamboj"},
       {name : "Anurag Chandel"},
-      {name : "Udit Gulati"}
+      {name : "Udit Gulati"},
+      {name : "Abhijeet Rai"},
+      {name : "Anurag Bansal"}
     ],
     showPeoples : false
   }
@@ -39,7 +41,9 @@ class App extends Component{
       peoples : [
         {name : name_to},
         {name : "Anil Sharma"},
-        {name : "Vikas"}
+        {name : "Vikas"},
+        {name : "Abhijeet Rai"},
+        {name : "Anurag Bansal"}
       ]
     })
   }
@@ -73,24 +77,26 @@ class App extends Component{
     }
   }
 
+  
+
   render(){
+    let peeps = null;
+  if(this.state.showPeoples)
+  {
+    peeps = (
+      <div>
+      {this.state.peoples.map(people =>{
+        return <People name = {people.name} />
+      } )}
+      </div>
+    );
+  }
     return(
     <div className ='App'> 
       <h1>This line is written using Class</h1>
       <button onClick= {this.switchNameHandler.bind(this, "Abhijeet")}>Switch Name</button>
       <button onClick= {this.togglePeopleHandler}>Dynamic</button>
-     {
-       this.state.showPeoples ?
-        <div>
-      <People name = {this.state.peoples[0].name}>
-       </People> 
-      <People name = {this.state.peoples[1].name}
-      click = {this.switchNameHandler.bind(this, 'MAX')} changed = {this.nameChangedHandler}> MY Hobbies 
-      </People> 
-      <People name = {this.state.peoples[2].name}>
-      </People>
-      </div> : null
-      }
+     {peeps}
     </div>
     );
   }
