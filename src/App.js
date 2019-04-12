@@ -120,6 +120,7 @@ class App extends Component{
       <h1> Hi there, I am {this.state.peoples[0].name}.</h1>
       <button onClick= {this.togglePeopleHandler}>{buttonshow}</button>
      {peeps}
+     
      {interest_row}
      {skills_row}
      {hobbies_row}
