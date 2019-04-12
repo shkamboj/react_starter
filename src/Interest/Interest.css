@@ -1,0 +1,25 @@
+.Interest {
+    width: 80%;
+    margin: 16px auto;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    padding : 16px;
+    text-align: center;
+    background: rgb(58, 153, 190);
+}
+
+
+input[type=text] {
+    border-radius: 10px;
+    border: grey;
+    color : darkslategray;
+    padding: 7px;
+    width: 75%;
+  }
+
+
+input::-moz-focus-inner {
+    border: 0;
+}
+  
+  

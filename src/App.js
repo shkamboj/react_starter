@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import ReactDOM from 'react-dom';
 import People from './People/People.js';
+import Hobbies from './Hobbies/Hobbies.js'
+import Interest from './Interest/Interest.js'
+import Skills from './Skills/Skills.js'
 
 function Person (props){
   return (
@@ -24,11 +27,11 @@ var app = (
 class App extends Component{
   state = {
     peoples : [
-      {name : "Shubham Kamboj"},
-      {name : "Anurag Chandel"},
-      {name : "Udit Gulati"},
-      {name : "Abhijeet Rai"},
-      {name : "Anurag Bansal"}
+      {name : "Shubham Kamboj", age : 12, hobbies : "I am looking for a MERN stack internship.",
+       title: "CSE Junior at Indian Institute of Information Technology Una", interest : "Web Development(MERN), Mathematics",
+      skills : " Javascript, NodeJS, React.js, C, C++, PHP, MongoDB, MySQL, Python, Algorithms, Data Structures, HTML5 & CSS3, Heroku, mlab "
+    }
+
     ],
     showPeoples : false
   }
@@ -76,22 +79,50 @@ class App extends Component{
 
   render(){
     let peeps = null;
+    let buttonshow = "Show Profile";
+    let hobbies_row = null;
+    let interest_row = null;
+    let skills_row = null;
   if(this.state.showPeoples)
   {
     peeps = (
       <div>
       {this.state.peoples.map(people =>{
-        return <People name = {people.name} />
+        return <People title = {people.title}  />
       } )}
       </div>
     );
+    hobbies_row = (
+      <div>
+      {this.state.peoples.map(people =>{
+        return <Hobbies hobbies = {people.hobbies}  />
+      } )}
+      </div>
+    );
+    interest_row = (
+      <div>
+      {this.state.peoples.map(people =>{
+        return <Interest interest = {people.interest}  />
+      } )}
+      </div>
+    );
+    skills_row = (
+      <div>
+      {this.state.peoples.map(people =>{
+        return <Skills skills = {people.skills}  />
+      } )}
+      </div>
+    );
+    buttonshow = "Hide Profile";
   }
     return(
     <div className ='App'> 
-      <h1>Hi there, I am Shubham Kamboj.</h1>
-      <button onClick= {this.switchNameHandler.bind(this, "Abhijeet")}>Switch Name</button>
-      <button onClick= {this.togglePeopleHandler}>Show Profile</button>
+      <h1> Hi there, I am {this.state.peoples[0].name}.</h1>
+      <button onClick= {this.togglePeopleHandler}>{buttonshow}</button>
      {peeps}
+     {interest_row}
+     {skills_row}
+     {hobbies_row}
     </div>
     );
   }
